@@ -6,7 +6,7 @@ SRC = add.c
 OBJ = $(SRC:.c=.o)
 TARGET = addnums.so
 
-.PHONY: all clean
+.PHONY: all clean check
 
 all: $(TARGET)
 
@@ -20,4 +20,4 @@ clean:
 	rm -f $(OBJ) $(TARGET)
 
 check:
-    @echo "Running checks..."
+	@echo "Running checks..."
