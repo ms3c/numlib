@@ -6,7 +6,7 @@ SRC = add.c
 OBJ = $(SRC:.c=.o)
 TARGET = addnums.so
 
-.PHONY: all clean check
+.PHONY: all clean check distcheck
 
 all: $(TARGET)
 
@@ -21,3 +21,8 @@ clean:
 
 check:
 	@echo "Running checks..."
+	# Add commands to run checks here
+
+distcheck:
+	@echo "Running distribution checks..."
+	# Add commands to check distribution readiness here
